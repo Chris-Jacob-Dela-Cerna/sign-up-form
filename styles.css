@@ -12,25 +12,37 @@ body {
 
 
 .page-container {
-/* Temporarily hide for quicker load time
-  background-image: url(img/sign-up-background-image.jpg); */
+  background-image: url(img/sign-up-background-image.jpg);
   background-color: rgb(67, 57, 56);
   background-size: auto 110%;
 
-  height: 100%;
-
   display: flex;
+  flex-wrap: wrap;
 }
 
 .panel {
-  border: 1px solid red;
   height: 100vh;
 }
 
 .hero.panel {
-  flex: 1 0 360px
+  flex: 3 0 360px
 }
 
 .sign-up.panel {
-  flex: 4 0 360px;
+  background-color: rgba(47, 42, 41, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2 0 360px;
+}
+
+
+
+.sign-up-form {
+  background-color: rgb(224, 224, 224);
+  border-radius: 6px;
+
+  height: 80%;
+  width: 90%;
 }
