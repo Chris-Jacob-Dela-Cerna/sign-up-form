@@ -11,9 +11,26 @@ body {
 
 
 
-.page-background {
-  background: url(img/sign-up-background-image.jpg);
+.page-container {
+/* Temporarily hide for quicker load time
+  background-image: url(img/sign-up-background-image.jpg); */
+  background-color: rgb(67, 57, 56);
   background-size: auto 110%;
 
   height: 100%;
+
+  display: flex;
+}
+
+.panel {
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.hero.panel {
+  flex: 1 0 360px
+}
+
+.sign-up.panel {
+  flex: 4 0 360px;
 }
