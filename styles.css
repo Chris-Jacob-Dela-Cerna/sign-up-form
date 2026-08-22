@@ -20,7 +20,7 @@ body {
   flex-wrap: wrap;
 }
 
-.panel {
+.page-container > .panel {
   height: 100vh;
 }
 
@@ -39,10 +39,22 @@ body {
 
 
 
-.sign-up-form {
+.form-container {
   background-color: rgb(224, 224, 224);
   border-radius: 6px;
 
+  display: flex;
+  flex-direction: column;
+
   height: 80%;
   width: 90%;
+  padding: 0 5%;
+}
+
+.form-container > .pane {
+  flex: 1 1 auto;
+}
+
+.form-container > .pane:not(:first-child) {
+  border-top: 1px solid rgb(177, 177, 177);
 }
