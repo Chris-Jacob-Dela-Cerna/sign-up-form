@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(img/sign-up-background-image.jpg);
+  background-size: auto 200vh;
+  background-repeat: no-repeat;
+  height: 200vh;
+}
