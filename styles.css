@@ -144,7 +144,7 @@
   border-radius: 0 6px 0 0;
   color: var(--clr-white);
   font-family: var(--font-thin);
-  font-size: 14px;
+  font-size: var(1rem);
   font-weight: 1000;
   letter-spacing: 1px;
 
@@ -168,9 +168,17 @@
   position: absolute;
   left: 0;
   top: 0;
+
+  display: flex;
 }
 
+.links-container > .link {
+  list-style: none;
+}
 
+.links-container > .link * {
+  text-decoration: none;
+}
 
 
 
