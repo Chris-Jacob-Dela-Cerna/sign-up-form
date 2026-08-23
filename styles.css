@@ -50,6 +50,7 @@
   --clr-yellow-500: rgb(225, 210, 140);
   --clr-red-100: rgb(155, 145, 145);
   --clr-maroon-tint: rgba(70, 45, 45, 0.5);
+  --clr-black-highlight: rgba(35, 35, 35, 0.2);
   --clr-black-tint: rgba(35, 35, 35, 0.5);
 
   --font-main: 'Roboto', system-ui;
@@ -170,13 +171,31 @@
   top: 0;
 
   display: flex;
+  justify-content: space-around;
+
+  width: 100%;
 }
 
 .links-container > .link {
+  border-radius: 8px;
   list-style: none;
+
+  padding: 1.2rem 1.8rem;
+
+  &:hover {
+    background-color: var(--clr-black-highlight);
+    border-left: 2px solid var(--clr-white);
+    border-right: 2px solid var(--clr-white);
+    margin-left: -1px;
+  }
 }
 
 .links-container > .link * {
+  color: var(--clr-white);
+  font-family: var(--font-thin);
+  font-size: 1.3rem;
+  font-weight: 1000;
+  letter-spacing: 0.1rem;
   text-decoration: none;
 }
 
