@@ -106,25 +106,17 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 25%;
+
+  height: clamp(5vh, 25cqw, 25vh);
 }
 
 .hero-container > .logo {
   border: 1px solid grey;
-  height: 45vh;
-  width: 40vh;
+  height: 200%;
+  width: auto;
 }
 
-.hero-container > .title {
-  color: var(--clr-white);
-  font-size: 3.2rem;
-}
 
-.hero-container > .title > .orion {
-  font-size: 200%;
-  display: block;
-}
 
 .background-credit {
   background-color: var(--clr-black-tint);
