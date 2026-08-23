@@ -111,9 +111,24 @@
 }
 
 .hero-container > .logo {
-  border: 1px solid grey;
   height: 200%;
   width: auto;
+}
+
+.hero-container > .title {
+  color: var(--clr-white);
+}
+
+.title > .project {
+  font-size: clamp(1vh, 5cqw, 5vh);
+
+  margin-bottom: -10%;
+}
+
+.title > .orion {
+  font-size: clamp(2vh, 12cqw, 12vh);
+
+  margin-left: -26%;
 }
 
 
