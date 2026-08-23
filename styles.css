@@ -1,14 +1,37 @@
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('fonts/Raleway-Thin.woff2') format('woff2'),
+        url('fonts/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('fonts/Raleway-ThinItalic.woff2') format('woff2'),
+        url('fonts/Raleway-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
 * {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 :root {
+  --font-thin: 'Raleway Thin';
+
   scrollbar-color: rgb(253, 253, 253) rgba(76, 50, 50, 0.5);
   scrollbar-width: thin;
 }
+
+
 
 body {
   height: 100vh;
@@ -18,7 +41,7 @@ body {
 
 .page-container {
   background-image: url(img/sign-up-background-image.jpg);
-  background-color: rgb(67, 57, 56);
+  background-color: rgb(157, 146, 145);
   background-size: auto 110%;
 
   display: flex;
@@ -81,14 +104,16 @@ body {
   flex: 7 1 auto;
 }
 
-.form-container > .pane:nth-child(2) {
+.form.pane {
   background-color: rgb(238, 238, 238);
   box-shadow: 0 0 8px rgb(163, 162, 162);
 
   flex: 10 1 auto
 }
 
-/*
+
+
+/* For later
 .form-container > .pane:not(:first-child) {
   border-top: 1px solid rgb(177, 177, 177);
-}
+} */
