@@ -1,5 +1,23 @@
 @font-face {
-    font-family: 'Raleway Thin';
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Italic.woff2') format('woff2'),
+        url('fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
     src: url('fonts/Raleway-Thin.woff2') format('woff2'),
         url('fonts/Raleway-Thin.woff') format('woff');
     font-weight: 100;
@@ -8,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway Thin';
+    font-family: 'Raleway';
     src: url('fonts/Raleway-ThinItalic.woff2') format('woff2'),
         url('fonts/Raleway-ThinItalic.woff') format('woff');
     font-weight: 100;
@@ -25,16 +43,11 @@
 }
 
 :root {
-  --font-thin: 'Raleway Thin';
+  --font-main: 'Roboto', system-ui;
+  --font-thin: 'Raleway', system-ui;
 
   scrollbar-color: rgb(253, 253, 253) rgba(76, 50, 50, 0.5);
   scrollbar-width: thin;
-}
-
-
-
-body {
-  height: 100vh;
 }
 
 
@@ -73,13 +86,16 @@ body {
   background-color: rgba(35, 31, 31, 0.5);
   border-radius: 0 6px 0 0;
   color: white;
-  font-size: 12px;
+  font-family: var(--font-thin);
+  font-size: 14px;
+  font-weight: 1000;
+  letter-spacing: 1px;
 
   position: absolute;
   left: 0;
   bottom: 0;
 
-  padding: 3px 8px;
+  padding: 4px 12px;
 }
 
 .background-credit > a {
