@@ -55,8 +55,9 @@
   --font-main: 'Roboto', system-ui;
   --font-thin: 'Raleway', system-ui;
 
-  scrollbar-color: var(--clr-white) 
-                   var(--clr-maroon-tint);
+  scrollbar-color: 
+    var(--clr-white) 
+    var(--clr-maroon-tint);
   scrollbar-width: thin;
 }
 
@@ -117,7 +118,7 @@
 
 .form-container {
   background-color: var(--clr-white-800);
-  border-radius: 6px;
+  border-radius: 8px;
 
   display: flex;
   flex-direction: column;
@@ -134,7 +135,8 @@
 
 .form.pane {
   background-color: var(--clr-white-900);
-  box-shadow: 0 0 8px var(--clr-grey-500);
-
+  box-shadow: 
+    0 -8px 8px -8px var(--clr-grey-500),
+    0 8px 8px -8px var(--clr-grey-500);
   flex: 5 1 auto;
 }
