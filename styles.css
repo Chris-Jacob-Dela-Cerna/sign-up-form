@@ -107,7 +107,8 @@
   display: flex;
   align-items: center;
 
-  height: clamp(5vh, 25cqw, 25vh);
+  height: clamp(5vh, 20cqw, 25vh);
+  margin-bottom: 12%;
 }
 
 .hero-container > .logo {
@@ -120,15 +121,16 @@
 }
 
 .title > .project {
-  font-size: clamp(1vh, 5cqw, 5vh);
+  font-size: clamp(1vh, 4cqw, 5vh);
 
   margin-bottom: -10%;
 }
 
 .title > .orion {
-  font-size: clamp(2vh, 12cqw, 12vh);
+  font-size: clamp(2vh, 9.5cqw, 12vh);
 
   margin-left: -26%;
+  margin-bottom: -8%;
 }
 
 
