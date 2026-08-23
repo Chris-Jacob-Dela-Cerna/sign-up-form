@@ -1,37 +1,37 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
-        url('fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+      url('fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Italic.woff2') format('woff2'),
-        url('fonts/Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Italic.woff2') format('woff2'),
+      url('fonts/Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Thin.woff2') format('woff2'),
-        url('fonts/Raleway-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Thin.woff2') format('woff2'),
+      url('fonts/Raleway-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-ThinItalic.woff2') format('woff2'),
-        url('fonts/Raleway-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-ThinItalic.woff2') format('woff2'),
+      url('fonts/Raleway-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
 }
 
 
@@ -43,10 +43,20 @@
 }
 
 :root {
+  --clr-white: rgb(255, 255, 255);
+  --clr-white-900: rgb(240, 240, 240);
+  --clr-white-800: rgb(230, 230, 230);
+  --clr-grey-500: rgb(160, 160, 160);
+  --clr-yellow-500: rgb(225, 210, 140);
+  --clr-red-100: rgb(157, 146, 145);
+  --clr-maroon-tint: rgba(70, 45, 45, 0.5);
+  --clr-black-tint: rgba(35, 35, 35, 0.5);
+
   --font-main: 'Roboto', system-ui;
   --font-thin: 'Raleway', system-ui;
 
-  scrollbar-color: rgb(253, 253, 253) rgba(76, 50, 50, 0.5);
+  scrollbar-color: var(--clr-white) 
+                   var(--clr-maroon-tint);
   scrollbar-width: thin;
 }
 
@@ -54,7 +64,7 @@
 
 .page-container {
   background-image: url(img/sign-up-background-image.jpg);
-  background-color: rgb(157, 146, 145);
+  background-color: var(--clr-red-100);
   background-size: auto 110%;
 
   display: flex;
@@ -72,7 +82,7 @@
 }
 
 .sign-up.panel {
-  background-color: rgba(35, 31, 31, 0.5);
+  background-color: var(--clr-black-tint);
 
   display: flex;
   align-items: center;
@@ -83,30 +93,30 @@
 
 
 .background-credit {
-  background-color: rgba(35, 31, 31, 0.5);
+  background-color: var(--clr-black-tint);
   border-radius: 0 6px 0 0;
-  color: white;
+  color: var(--clr-white);
   font-family: var(--font-thin);
   font-size: 14px;
   font-weight: 1000;
   letter-spacing: 1px;
 
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
 
   padding: 4px 12px;
 }
 
 .background-credit > a {
-  color: rgb(224, 209, 141);
+  color: var(--clr-yellow-500);
   text-decoration: none;
 }
 
 
 
 .form-container {
-  background-color: rgb(229, 229, 229);
+  background-color: var(--clr-white-800);
   border-radius: 6px;
 
   display: flex;
@@ -117,19 +127,14 @@
 }
 
 .form-container > .pane {
-  flex: 7 1 auto;
+  flex: 3 1 auto;
+
+  padding: 12px;
 }
 
 .form.pane {
-  background-color: rgb(238, 238, 238);
-  box-shadow: 0 0 8px rgb(163, 162, 162);
+  background-color: var(--clr-white-900);
+  box-shadow: 0 0 8px var(--clr-grey-500);
 
-  flex: 10 1 auto
+  flex: 5 1 auto;
 }
-
-
-
-/* For later
-.form-container > .pane:not(:first-child) {
-  border-top: 1px solid rgb(177, 177, 177);
-} */
