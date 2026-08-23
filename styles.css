@@ -55,6 +55,7 @@
   --font-main: 'Roboto', system-ui;
   --font-thin: 'Raleway', system-ui;
 
+  font-size: 14px;
   scrollbar-color: 
     var(--clr-white) 
     var(--clr-maroon-tint);
@@ -62,6 +63,8 @@
 }
 
 
+
+/*  Page Components  */
 
 .page-container {
   background-image: url(img/sign-up-background-image.jpg);
@@ -79,7 +82,10 @@
 .hero.panel {
   position: relative;
 
-  flex: 3 0 360px
+  display: flex;
+  flex: 3 0 360px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sign-up.panel {
@@ -92,6 +98,33 @@
 }
 
 
+
+/*  Hero Panel  */
+
+.hero-container {
+  background-color: var(--clr-black-tint);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+}
+
+.hero-container > .logo {
+  border: 1px solid grey;
+  height: 45vh;
+  width: 40vh;
+}
+
+.hero-container > .title {
+  color: var(--clr-white);
+  font-size: 3.2rem;
+}
+
+.hero-container > .title > .orion {
+  font-size: 200%;
+  display: block;
+}
 
 .background-credit {
   background-color: var(--clr-black-tint);
@@ -115,6 +148,8 @@
 }
 
 
+
+/*  Sign-up Panel  */
 
 .form-container {
   background-color: var(--clr-white-800);
