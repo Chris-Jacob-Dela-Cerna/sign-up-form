@@ -67,7 +67,9 @@
 /*  Page Components  */
 
 .page-container {
+/* Temporary
   background-image: url(img/sign-up-background-image.jpg);
+*/
   background-color: var(--clr-red-100);
   background-size: auto 110%;
 
@@ -91,6 +93,8 @@
 .sign-up.panel {
   background-color: var(--clr-black-tint);
 
+  position: relative;
+
   display: flex;
   align-items: center;
   flex: 2 0 360px;
@@ -108,7 +112,7 @@
   align-items: center;
 
   height: clamp(5vh, 20cqw, 25vh);
-  margin-bottom: 12%;
+  margin-bottom: 12vh;
 }
 
 .hero-container > .logo {
@@ -159,6 +163,16 @@
 
 
 /*  Sign-up Panel  */
+
+.links-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+
 
 .form-container {
   background-color: var(--clr-white-800);
