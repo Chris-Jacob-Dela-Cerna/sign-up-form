@@ -164,6 +164,7 @@
 
 
 /*  Sign-up Panel  */
+/*  Links  */
 
 .links-container {
   position: absolute;
@@ -205,7 +206,7 @@
   }
 }
 
-
+/*  Form  */
 
 .form-container {
   background-color: var(--clr-white-800);
@@ -219,9 +220,21 @@
 }
 
 .form-container > .pane {
+  font-family: var(--font-main);
+
   flex: 3 1 auto;
 
-  padding: 12px;
+  padding: 5%;
+}
+
+.about.pane {
+  font-size: 1.6rem;
+  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15%;
 }
 
 .form.pane {
