@@ -68,7 +68,7 @@
 /*  Page Components  */
 
 .page-container {
-/* Temporary
+/*
   background-image: url(img/sign-up-background-image.jpg);
 */
   background-color: var(--clr-red-100);
@@ -186,7 +186,8 @@
     background-color: var(--clr-black-highlight);
     border-left: 2px solid var(--clr-white);
     border-right: 2px solid var(--clr-white);
-    margin-left: -1px;
+    margin-left: -2px;
+    margin-right: -2px;
   }
 }
 
