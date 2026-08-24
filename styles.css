@@ -167,12 +167,13 @@
 
 .links-container {
   position: absolute;
+  bottom: 0;
   left: 0;
-  top: 0;
 
   display: flex;
   justify-content: space-around;
 
+  margin-bottom: 0.3rem;
   width: 100%;
 }
 
@@ -180,7 +181,7 @@
   border-radius: 8px;
   list-style: none;
 
-  padding: 1.2rem 1.8rem;
+  padding: 1.2rem 2rem;
 
   &:hover {
     background-color: var(--clr-black-highlight);
@@ -194,10 +195,14 @@
 .links-container > .link * {
   color: var(--clr-white);
   font-family: var(--font-thin);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 1000;
   letter-spacing: 0.1rem;
   text-decoration: none;
+
+  &:hover {
+    color: var(--clr-yellow-500);
+  }
 }
 
 
