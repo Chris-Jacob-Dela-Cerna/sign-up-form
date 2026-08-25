@@ -255,3 +255,21 @@
 .submit.pane {
   padding-bottom: 7%;
 }
+
+/*  Sign Up Pane  */
+
+.form > .sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form > .sign-up > .form-divider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-divider > .input-container {
+  display: flex;
+  flex-direction: column;
+}
