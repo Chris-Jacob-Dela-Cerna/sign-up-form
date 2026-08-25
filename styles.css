@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Regular.woff2') format('woff2'),
-      url('fonts/Roboto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.woff2') format('woff2'),
+        url('fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Italic.woff2') format('woff2'),
-      url('fonts/Roboto-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-Thin.woff2') format('woff2'),
-      url('fonts/Raleway-Thin.woff') format('woff');
+  src: url('fonts/Raleway/Raleway-Thin.woff2') format('woff2'),
+      url('fonts/Raleway/Raleway-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -53,7 +53,7 @@
   --clr-black-highlight: rgba(35, 35, 35, 0.2);
   --clr-black-tint: rgba(35, 35, 35, 0.5);
 
-  --font-main: 'Roboto', system-ui;
+  --font-main: 'Plus Jakarta Sans', system-ui;
   --font-thin: 'Raleway', system-ui;
 
   font-size: 14px;
@@ -196,7 +196,7 @@
 .links-container > .link * {
   color: var(--clr-white);
   font-family: var(--font-thin);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 1000;
   letter-spacing: 0.1rem;
   text-decoration: none;
@@ -228,7 +228,7 @@
 }
 
 .about.pane {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: justify;
 
   display: flex;
