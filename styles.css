@@ -215,7 +215,8 @@
   display: flex;
   flex-direction: column;
 
-  height: 85%;
+  height: fit-content;
+  max-height: 85%;
   width: 90%;
 }
 
@@ -229,12 +230,15 @@
 
 .about.pane {
   font-size: 1.5rem;
+  line-height: 2rem;
   text-align: justify;
 
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 15%;
+  gap: 1.5rem;
+
+  padding-top: 7%;
 }
 
 .form.pane {
@@ -243,4 +247,8 @@
     0 -8px 8px -8px var(--clr-grey-500),
     0 8px 8px -8px var(--clr-grey-500);
   flex: 5 1 auto;
+}
+
+.submit.pane {
+  padding-bottom: 7%;
 }
