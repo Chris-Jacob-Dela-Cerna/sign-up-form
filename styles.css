@@ -231,7 +231,6 @@
 .about.pane {
   font-size: 1.5rem;
   line-height: 2rem;
-  text-align: justify;
 
   display: flex;
   flex-direction: column;
@@ -246,7 +245,11 @@
   box-shadow: 
     0 -8px 8px -8px var(--clr-grey-500),
     0 8px 8px -8px var(--clr-grey-500);
+
   flex: 5 1 auto;
+
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .submit.pane {
