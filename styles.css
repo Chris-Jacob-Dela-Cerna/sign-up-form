@@ -79,7 +79,7 @@
 }
 
 .page-container > .panel {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero.panel {
@@ -164,6 +164,95 @@
 
 
 /*  Sign-up Panel  */
+
+/*  Form  */
+
+.form-container {
+  background-color: var(--clr-white-800);
+  border-radius: 8px;
+  font-family: var(--font-main);
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  height: fit-content;
+  max-height: 85%;
+  width: 90%;
+}
+
+.form-container > .pane {
+  flex: 3 1 auto;
+
+  padding: 5%;
+}
+
+.about.pane {
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1.5rem;
+
+  padding-top: 7%;
+}
+
+.form.pane {
+  background-color: var(--clr-white-900);
+  box-shadow: 
+    0 -8px 8px -8px var(--clr-grey-500),
+    0 8px 8px -8px var(--clr-grey-500);
+
+  display: flex;
+  flex: 5 1 auto;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.submit.pane {
+  padding-bottom: 7%;
+}
+
+/*  Form Pane  */
+
+.form.pane > .sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.sign-up > .form-divider {
+  border: 1px solid lightblue;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.form-divider > .input-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 3rem;
+}
+
+.input-container > label {
+  font-size: 0.9rem;
+  font-weight: 500;
+
+
+  margin-left: 0.3rem;
+}
+
+.input-container > input {
+  width: 16rem;
+}
+
 /*  Links  */
 
 .links-container {
@@ -204,72 +293,4 @@
   &:hover {
     color: var(--clr-yellow-500);
   }
-}
-
-/*  Form  */
-
-.form-container {
-  background-color: var(--clr-white-800);
-  border-radius: 8px;
-
-  display: flex;
-  flex-direction: column;
-
-  height: fit-content;
-  max-height: 85%;
-  width: 90%;
-}
-
-.form-container > .pane {
-  font-family: var(--font-main);
-
-  flex: 3 1 auto;
-
-  padding: 5%;
-}
-
-.about.pane {
-  font-size: 1.5rem;
-  line-height: 2rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 1.5rem;
-
-  padding-top: 7%;
-}
-
-.form.pane {
-  background-color: var(--clr-white-900);
-  box-shadow: 
-    0 -8px 8px -8px var(--clr-grey-500),
-    0 8px 8px -8px var(--clr-grey-500);
-
-  flex: 5 1 auto;
-
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.submit.pane {
-  padding-bottom: 7%;
-}
-
-/*  Sign Up Pane  */
-
-.form > .sign-up {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.form > .sign-up > .form-divider {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.form-divider > .input-container {
-  display: flex;
-  flex-direction: column;
 }
