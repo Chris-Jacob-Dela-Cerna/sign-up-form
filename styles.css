@@ -48,8 +48,10 @@
   --clr-white-800: rgb(230, 230, 230);
   --clr-grey-300: rgb(190, 190, 190);
   --clr-grey-500: rgb(160, 160, 160);
+  --clr-blue-1000: rgb(0, 0, 255);
   --clr-yellow-500: rgb(225, 210, 140);
   --clr-red-100: rgb(155, 145, 145);
+  --clr-red-800: rgb(200, 45, 45);
   --clr-maroon-tint: rgba(70, 45, 45, 0.5);
   --clr-black-highlight: rgba(35, 35, 35, 0.2);
   --clr-black-tint: rgba(35, 35, 35, 0.5);
@@ -263,6 +265,18 @@
   padding: 0.4rem;
   height: 1.7rem;
   width: 16rem;
+
+  &:user-invalid {
+    border-color: var(--clr-red-800);
+  }
+  &:focus {
+    box-shadow: 0 0 0.5rem var(--clr-grey-500);
+    border-color: var(--clr-grey-300);
+    outline: 1px solid var(--clr-blue-1000);
+  }
+  &::placeholder {
+    color: var(--clr-grey-500);
+  }
 }
 
 /*  Links  */
