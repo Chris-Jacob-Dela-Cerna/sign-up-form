@@ -46,6 +46,7 @@
   --clr-white: rgb(255, 255, 255);
   --clr-white-900: rgb(240, 240, 240);
   --clr-white-800: rgb(230, 230, 230);
+  --clr-grey-300: rgb(190, 190, 190);
   --clr-grey-500: rgb(160, 160, 160);
   --clr-yellow-500: rgb(225, 210, 140);
   --clr-red-100: rgb(155, 145, 145);
@@ -208,7 +209,7 @@
   display: flex;
   flex: 5 1 auto;
   flex-direction: column;
-  gap: 1.3rem;
+  gap: 1.5rem;
 
   padding-top: 3%;
   padding-bottom: 3%;
@@ -227,8 +228,6 @@
 }
 
 .sign-up > .form-divider {
-  border: 1px solid lightblue;
-
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
@@ -237,19 +236,27 @@
 .form-divider > .input-container {
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
 
   margin-right: 3rem;
 }
 
 .input-container > label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
-
-
-  margin-left: 0.3rem;
+  letter-spacing: 0.1rem;
 }
 
 .input-container > input {
+  border: 1px solid var(--clr-grey-300);
+  border-radius: 0.3rem;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 500;
+
+  margin-left: 0.1rem;
+  padding: 0.4rem;
+  height: 1.7rem;
   width: 16rem;
 }
 
