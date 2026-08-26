@@ -42,33 +42,69 @@
               <div class="form-divider">
                 <div class="input-container">
                   <label for="first-name">FIRST NAME</label>
-                  <input id="first-name" name="first-name">
+                  <input id="first-name" 
+                         name="first-name"
+                         type="text"
+                         min="1"
+                         max="50"
+                         pattern="^[a-zA-Z\s'-]+$"
+                         required>
                 </div>
                 <div class="input-container">
                   <label for="last-name">LAST NAME</label>
-                  <input id="last-name" name="last-name">
+                  <input id="last-name" 
+                         name="last-name"
+                         type="text"
+                         min="1"
+                         max="50"
+                         pattern="^[a-zA-Z\s'-]+$"
+                         required>
                 </div>
               </div>
 
               <div class="form-divider">
                 <div class="input-container">
                   <label for="email">EMAIL</label>
-                  <input id="email" name="email">
+                  <input id="email" 
+                         name="email"
+                         type="email"
+                         min="3"
+                         max="254"
+                         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                         placeholder="name@example.com"
+                         required>
                 </div>
                 <div class="input-container">
-                  <label for="phone-number">PHONE NUMBER</label>
-                  <input id="phone-number" name="phone-number">
+                  <label for="phone-number">PHONE NUMBER <span>(optional)</span></label>
+                  <input id="phone-number" 
+                         name="phone-number"
+                         type="tel"
+                         min="7"
+                         max="15"
+                         pattern="^\+?[1-9]\d{1,14}$">
                 </div>
               </div>
 
               <div class="form-divider">
                 <div class="input-container">
                   <label for="password">PASSWORD</label>
-                  <input id="password" name="password">
+                  <input id="password" 
+                         name="password"
+                         type="password"
+                         min="8"
+                         max="128"
+                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                         required>
                 </div>
                 <div class="input-container">
                   <label for="confirm-password">CONFIRM PASSWORD</label>
-                  <input id="confirm-password" name="confirm-password">
+                  <input id="confirm-password" 
+                         name="confirm-password"
+                         type="password"
+                         min="8"
+                         max="128"
+                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                         required>
                 </div>
               </div>
             </form>
