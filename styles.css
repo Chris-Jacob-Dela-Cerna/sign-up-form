@@ -74,9 +74,7 @@
 /*  Page Components  */
 
 .page-container {
-/*
   background-image: url(img/sign-up-background-image.jpg);
-*/
   background-color: var(--clr-red-100);
   background-size: auto 110%;
 
