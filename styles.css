@@ -285,7 +285,7 @@
 .submit.pane {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.9rem;
 
   padding-top: 3%;
   padding-bottom: 7%;
@@ -317,6 +317,15 @@
     background-color: var(--clr-gold-400);
   }
 }
+
+.submit.pane > .log-in.message {
+  font-family: var(--font-thin);
+  font-size: 0.9rem;
+  font-weight: 1000;
+  letter-spacing: 0.05rem;
+}
+
+
 
 /*  Links  */
 
