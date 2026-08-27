@@ -38,7 +38,7 @@
 
           <div class="form pane">
             <h2>Register</h2>
-            <form class="sign-up action="#">
+            <form class="sign-up" action="#" id="sign-up-form">
               <div class="form-divider">
                 <div class="input-container">
                   <label for="first-name">FIRST NAME</label>
@@ -110,7 +110,10 @@
             </form>
           </div>
 
-          <div class="submit pane"></div>
+          <div class="submit pane">
+            <button class="submit-button" form="sign-up-form" type="submit">Register Account</button>
+            <p class="log-in message">Already have an account? <a class="log-in link" href="#">Log in<a></p>
+          </div>
         </div>
       </div>
     </div>
