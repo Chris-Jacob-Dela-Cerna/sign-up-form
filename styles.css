@@ -50,6 +50,9 @@
   --clr-grey-500: rgb(160, 160, 160);
   --clr-blue-1000: rgb(0, 0, 255);
   --clr-yellow-500: rgb(225, 210, 140);
+  --clr-gold-400: rgb(205, 185, 90);
+  --clr-gold-600: rgb(195, 175, 70);
+  --clr-gold-800: rgb(180, 155, 50);
   --clr-red-100: rgb(155, 145, 145);
   --clr-red-800: rgb(200, 45, 45);
   --clr-maroon-tint: rgba(70, 45, 45, 0.5);
@@ -108,7 +111,8 @@
 
 
 
-/*  Hero Panel  */
+/*  --- Hero Panel ---  */
+/*  Hero  */
 
 .hero-container {
   background-color: var(--clr-black-tint);
@@ -142,7 +146,7 @@
   margin-bottom: -8%;
 }
 
-
+/*  BG Image Credit  */
 
 .background-credit {
   background-color: var(--clr-black-tint);
@@ -167,8 +171,7 @@
 
 
 
-/*  Sign-up Panel  */
-
+/*  --- Sign-up Panel ---  */
 /*  Form  */
 
 .form-container {
@@ -191,6 +194,8 @@
   padding: 5%;
 }
 
+/*  About Pane  */
+
 .about.pane {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -202,6 +207,8 @@
 
   padding-top: 7%;
 }
+
+/*  Form Pane  */
 
 .form.pane {
   background-color: var(--clr-white-900);
@@ -217,12 +224,6 @@
   padding-top: 3%;
   padding-bottom: 3%;
 }
-
-.submit.pane {
-  padding-bottom: 7%;
-}
-
-/*  Form Pane  */
 
 .form.pane > .sign-up {
   display: flex;
@@ -276,6 +277,44 @@
   }
   &::placeholder {
     color: var(--clr-grey-500);
+  }
+}
+
+/*  Submit Pane  */
+
+.submit.pane {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+
+.submit.pane > .submit-button {
+  background-color: var(--clr-gold-800);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px var(--clr-grey-500);
+  color: var(--clr-white);
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.4rem;
+  height: 2.8rem;
+  width: 13rem;
+
+  &:hover {
+    background-color: var(--clr-gold-600);
+  }
+  &:active {
+    background-color: var(--clr-gold-400);
   }
 }
 
